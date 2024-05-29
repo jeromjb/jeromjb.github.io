@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/13b1ac29d6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#porfolio">Portfolio</a></li>
+                <li><a href="contactindex.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Musician for Christ</p>
+            <h1>Hi, I'm Jerom<br> Joe Binu </h1>
+        </div>
+        
+
+    </div>
+
+</div>
+
+
+
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I have a special ability as a worship musician to encourage and raise people in their spiritual path by using your musical talents. My melodies and lyrics create an atmosphere of reverence and contemplation, strengthen ties to the community, and help individuals connect with their faith. I have the blessing and talent touch people's hearts and souls with your music by spreading messages of love, hope, and devotion. My commitment to my profession transcends simple performance; it's a vocation to utilize my talents to improve people's spiritual lives and have a significant influence on those who turn to music for inspiration and comfort.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>Playing Musical Instruments</li>
+                        <li>Digital Audio Recording</li>
+                        <li>Sound Designing <br> Mixing & Mastering </li>
+                        <li>Lights & Visuals </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>I have experience of 10+ years in this field attending a lot of programmes</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li>I have a basic education in this field and moreover, I have implemented the process of self-teaching</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-cross"></i>
+                <h2>Worship Musician</h2>
+                <p>A worship musician is a committed person who leads and facilitates worship in religious or spiritual organizations using their musical abilities. Along with being accomplished musicians, they have a strong religious commitment and concern for the spiritual welfare of others.
+                    Worship musicians use music, which unites people everywhere, to build a bridge between the community and the divine. They may lead congregational singing, play solos, or work in tandem with other musicians.
+                    </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-music"></i>
+                <h2>Music Producer</h2>
+                <p>An artist who directs the creation and recording of songs or albums is known as a music producer. In order to realize the intended artistic vision, they collaborate closely with performers, songwriters, and engineers to shape the overall sound and direction of a recording.
+                    Music producers frequently possess a wide range of abilities, such as proficiency in studio technology, instrumentation, theory, and arrangement. They may offer compositional advice, assist performers in honing their performances, and make choices about arrangement, speed, and instrumentation to heighten a song's emotional effect.
+                    </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <h2>Light & Visuals Tech</h2>
+                <p>A competent individual who specializes in generating immersive and significant visual experiences for religious or spiritual meetings is known as a worship light and visuals technician. They use projection, lighting, and other visual components to heighten the mood and emphasize the message during worship sessions.
+                    These specialists are skilled in using projectors, LED displays, lighting consoles, and other visual control and display equipment. They collaborate closely with worship leaders, musicians, and other technical team members to plan lighting cues and visual effects that fit the service's themes and tone.
+                    </p>
+                <a href="#">Learn more</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+<div id="porfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>Worship Session</h3>
+                    <a href="work1.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Recordings</h3>
+                    <a href="work2.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Lights & Visuals</h3>
+                    <a href="wrok3.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="see more.html" class="btn">See more</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+ 
+
+<script>
+
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+
+</script>
+</body>
+</html>
